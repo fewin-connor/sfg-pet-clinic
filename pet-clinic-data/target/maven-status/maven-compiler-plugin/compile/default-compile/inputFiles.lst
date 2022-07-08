@@ -1,5 +1,9 @@
+/Users/connorfewin/Desktop/projects/Spring/sfg-pet-clinic/pet-clinic-data/src/main/java/guru/springframework/sfgpetclinic/model/BaseEntity.java
+/Users/connorfewin/Desktop/projects/Spring/sfg-pet-clinic/pet-clinic-data/src/main/java/guru/springframework/sfgpetclinic/services/OwnerService.java
 /Users/connorfewin/Desktop/projects/Spring/sfg-pet-clinic/pet-clinic-data/src/main/java/guru/springframework/sfgpetclinic/model/Owner.java
 /Users/connorfewin/Desktop/projects/Spring/sfg-pet-clinic/pet-clinic-data/src/main/java/guru/springframework/sfgpetclinic/model/Vet.java
 /Users/connorfewin/Desktop/projects/Spring/sfg-pet-clinic/pet-clinic-data/src/main/java/guru/springframework/sfgpetclinic/model/Pet.java
+/Users/connorfewin/Desktop/projects/Spring/sfg-pet-clinic/pet-clinic-data/src/main/java/guru/springframework/sfgpetclinic/services/VetService.java
+/Users/connorfewin/Desktop/projects/Spring/sfg-pet-clinic/pet-clinic-data/src/main/java/guru/springframework/sfgpetclinic/services/PetService.java
 /Users/connorfewin/Desktop/projects/Spring/sfg-pet-clinic/pet-clinic-data/src/main/java/guru/springframework/sfgpetclinic/model/Person.java
 /Users/connorfewin/Desktop/projects/Spring/sfg-pet-clinic/pet-clinic-data/src/main/java/guru/springframework/sfgpetclinic/model/PetType.java
