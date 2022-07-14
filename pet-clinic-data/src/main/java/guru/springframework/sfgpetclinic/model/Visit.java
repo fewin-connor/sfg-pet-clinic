@@ -4,15 +4,15 @@ import java.time.LocalDate;
 
 public class Visit extends BaseEntity {
 
-    private LocalDate data;
+    private LocalDate date;
     private String description;
     private Pet pet;
     
-    public LocalDate getData() {
-        return data;
+    public LocalDate getDate() {
+        return date;
     }
-    public void setData(LocalDate data) {
-        this.data = data;
+    public void setDate(LocalDate date) {
+        this.date = date;
     }
     public String getDescription() {
         return description;
