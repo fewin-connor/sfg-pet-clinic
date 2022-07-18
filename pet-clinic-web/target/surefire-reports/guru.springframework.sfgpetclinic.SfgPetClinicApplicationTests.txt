@@ -1,11 +1,17 @@
 -------------------------------------------------------------------------------
 Test set: guru.springframework.sfgpetclinic.SfgPetClinicApplicationTests
 -------------------------------------------------------------------------------
-Tests run: 1, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 6.509 s <<< FAILURE! - in guru.springframework.sfgpetclinic.SfgPetClinicApplicationTests
-contextLoads  Time elapsed: 0.015 s  <<< ERROR!
+Tests run: 1, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 8.859 s <<< FAILURE! - in guru.springframework.sfgpetclinic.SfgPetClinicApplicationTests
+contextLoads  Time elapsed: 0.011 s  <<< ERROR!
 java.lang.IllegalStateException: Failed to load ApplicationContext
-Caused by: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'dataLoader' defined in file [/Users/connorfewin/Desktop/projects/Spring/sfg-pet-clinic/pet-clinic-web/target/classes/guru/springframework/sfgpetclinic/bootstrap/DataLoader.class]: Unsatisfied dependency expressed through constructor parameter 0; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'ownerSDJpaService' defined in URL [jar:file:/Users/connorfewin/Desktop/projects/Spring/sfg-pet-clinic/pet-clinic-data/target/pet-clinic-data-0.0.5-SNAPSHOT.jar!/guru/springframework/sfgpetclinic/services/springdatajpa/OwnerSDJpaService.class]: Unsatisfied dependency expressed through constructor parameter 0; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'ownerRepository': Invocation of init method failed; nested exception is java.lang.IllegalArgumentException: Not a managed type: class guru.springframework.sfgpetclinic.model.Owner
-Caused by: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'ownerSDJpaService' defined in URL [jar:file:/Users/connorfewin/Desktop/projects/Spring/sfg-pet-clinic/pet-clinic-data/target/pet-clinic-data-0.0.5-SNAPSHOT.jar!/guru/springframework/sfgpetclinic/services/springdatajpa/OwnerSDJpaService.class]: Unsatisfied dependency expressed through constructor parameter 0; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'ownerRepository': Invocation of init method failed; nested exception is java.lang.IllegalArgumentException: Not a managed type: class guru.springframework.sfgpetclinic.model.Owner
-Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'ownerRepository': Invocation of init method failed; nested exception is java.lang.IllegalArgumentException: Not a managed type: class guru.springframework.sfgpetclinic.model.Owner
-Caused by: java.lang.IllegalArgumentException: Not a managed type: class guru.springframework.sfgpetclinic.model.Owner
+Caused by: org.springframework.beans.factory.BeanCreationException: 
+Error creating bean with name 'requestMappingHandlerMapping' defined in class path resource [org/springframework/boot/autoconfigure/web/servlet/WebMvcAutoConfiguration$EnableWebMvcConfiguration.class]: Invocation of init method failed; nested exception is java.lang.IllegalStateException: Ambiguous mapping. Cannot map 'ownerController' method 
+public java.lang.String guru.springframework.sfgpetclinic.controllers.OwnerController.findOwners()
+to {[/owners/find]}: There is already 'ownerController' bean method
+public java.lang.String guru.springframework.sfgpetclinic.controllers.OwnerController.findOwners(org.springframework.ui.Model) mapped.
+Caused by: java.lang.IllegalStateException: 
+Ambiguous mapping. Cannot map 'ownerController' method 
+public java.lang.String guru.springframework.sfgpetclinic.controllers.OwnerController.findOwners()
+to {[/owners/find]}: There is already 'ownerController' bean method
+public java.lang.String guru.springframework.sfgpetclinic.controllers.OwnerController.findOwners(org.springframework.ui.Model) mapped.
 
