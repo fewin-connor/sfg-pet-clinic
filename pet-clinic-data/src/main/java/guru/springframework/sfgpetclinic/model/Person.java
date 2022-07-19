@@ -2,9 +2,20 @@ package guru.springframework.sfgpetclinic.model;
 
 import javax.persistence.Column;
 import javax.persistence.MappedSuperclass;
+import lombok.*;
 
+@Setter
+@Getter
+@AllArgsConstructor
+@NoArgsConstructor
 @MappedSuperclass
 public class Person extends BaseEntity {
+
+    public Person(Long id, String firstName, String lastName) {
+        super(id);
+        this.firstName = firstName;
+        this.lastName = lastName;
+    }
 
     @Column(name = "first_name")
     private String firstName;
@@ -14,18 +25,6 @@ public class Person extends BaseEntity {
 
     public String getFirstName() {
         return firstName;
-    }
-
-    public void setFirstName(String firstName) {
-        this.firstName = firstName;
-    }
-
-    public String getLastName() {
-        return lastName;
-    }
-
-    public void setLastName(String lastName) {
-        this.lastName = lastName;
     }
 
 }
